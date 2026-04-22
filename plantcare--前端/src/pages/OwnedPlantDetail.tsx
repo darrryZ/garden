@@ -81,7 +81,7 @@ export function OwnedPlantDetail() {
         reader.onloadend = () => {
           setMilestonePhotos(prev => [...prev, reader.result as string]);
         };
-        reader.readAsDataURL(file);
+        reader.readAsDataURL(file as File);
       });
   };
 

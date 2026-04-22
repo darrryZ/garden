@@ -24,7 +24,7 @@ export async function updateProfile(data: UpdateProfileData): Promise<UserProfil
   try {
     const res = await request<{ success: boolean; data: UserProfile }>('PUT', '/api/auth/profile', data);
     if (res.success && res.data) {
-      return res.data.data || res.data;
+      return (res.data as any).data || (res.data as any);
     }
     return null;
   } catch (error) {
