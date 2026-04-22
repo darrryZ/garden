@@ -11,6 +11,7 @@ const auth = require('./auth');
 const userPlants = require('./userPlants');
 const diary = require('./diary');
 const searchApi = require('./search-api');
+const userFeatures = require('./userFeatures');
 
 const app = express();
 const PORT = process.env.PORT || 3002;
@@ -391,15 +392,6 @@ app.get('/api/stats', (req, res) => {
 // 注册搜索API路由
 app.use('/api', searchApi);
 
-// 错误处理
-app.use((err, req, res, next) => {
-  console.error('服务器错误:', err);
-  res.status(500).json({
-    success: false,
-    error: '服务器内部错误'
-  });
-});
-
 // ==================== 用户植物管理 API ====================
 
 /**
@@ -598,31 +590,6 @@ app.delete('/api/reminders/:id', authMiddleware, async (req, res) => {
   }
 });
 
-// 404 处理 - 必须在所有路由之后
-app.use((req, res) => {
-  res.status(404).json({
-    success: false,
-    error: 'API 接口未找到'
-  });
-});
-
-// 启动服务器
-app.listen(PORT, () => {
-  console.log('\n🌱 Rose Garden 植物数据库 API 服务');
-  console.log('=' .repeat(50));
-  console.log(`📡 服务地址: http://localhost:${PORT}`);
-  console.log(`📚 API 文档:`);
-  console.log(`   GET  /api/health           - 健康检查`);
-  console.log(`   GET  /api/categories       - 分类列表`);
-  console.log(`   GET  /api/plants           - 植物列表（支持筛选/分页/搜索）`);
-  console.log(`   GET  /api/plants/:id       - 植物详情`);
-  console.log(`   GET  /api/plants/random/:n - 随机植物`);
-  console.log(`   GET  /api/stats            - 统计数据`);
-  console.log('=' .repeat(50));
-});
-
-module.exports = app;
-
 // ==================== 日记 API ====================
 
 /**
@@ -755,3 +722,117 @@ app.get('/api/diary/stats', authMiddleware, async (req, res) => {
     res.status(500).json({ success: false, error: '服务器内部错误' });
   }
 });
+
+// ==================== 收藏 / 反馈 API ====================
+
+app.get('/api/favorites', authMiddleware, async (req, res) => {
+  try {
+    const favorites = await userFeatures.getFavorites(req.userId);
+    res.json({ success: true, data: favorites });
+  } catch (error) {
+    console.error('获取收藏列表错误:', error);
+    res.status(500).json({ success: false, error: '服务器内部错误' });
+  }
+});
+
+app.post('/api/favorites', authMiddleware, async (req, res) => {
+  try {
+    const { plantId } = req.body;
+
+    if (!plantId) {
+      return res.status(400).json({ success: false, error: '请提供植物 ID' });
+    }
+
+    const result = await userFeatures.addFavorite(req.userId, plantId);
+    res.status(result.alreadyExists ? 200 : 201).json({ success: true, data: result.favorite });
+  } catch (error) {
+    console.error('添加收藏错误:', error);
+    res.status(500).json({ success: false, error: '服务器内部错误' });
+  }
+});
+
+app.delete('/api/favorites/:favoriteId', authMiddleware, async (req, res) => {
+  try {
+    const deleted = await userFeatures.removeFavorite(req.userId, req.params.favoriteId);
+
+    if (!deleted) {
+      return res.status(404).json({ success: false, error: '收藏不存在' });
+    }
+
+    res.json({ success: true, message: '删除成功' });
+  } catch (error) {
+    console.error('删除收藏错误:', error);
+    res.status(500).json({ success: false, error: '服务器内部错误' });
+  }
+});
+
+app.delete('/api/favorites/plant/:plantId', authMiddleware, async (req, res) => {
+  try {
+    const deleted = await userFeatures.removeFavoriteByPlantId(req.userId, req.params.plantId);
+
+    if (!deleted) {
+      return res.status(404).json({ success: false, error: '收藏不存在' });
+    }
+
+    res.json({ success: true, message: '删除成功' });
+  } catch (error) {
+    console.error('删除收藏错误:', error);
+    res.status(500).json({ success: false, error: '服务器内部错误' });
+  }
+});
+
+app.post('/api/feedback', authMiddleware, async (req, res) => {
+  try {
+    const { category, message, contact, screenshot } = req.body;
+
+    if (!message || !String(message).trim()) {
+      return res.status(400).json({ success: false, error: '请填写反馈内容' });
+    }
+
+    const feedback = await userFeatures.createFeedback(req.userId, {
+      category,
+      message: String(message).trim(),
+      contact: contact ? String(contact).trim() : '',
+      screenshot: screenshot || '',
+    });
+
+    res.status(201).json({ success: true, data: feedback });
+  } catch (error) {
+    console.error('提交反馈错误:', error);
+    res.status(500).json({ success: false, error: '服务器内部错误' });
+  }
+});
+
+// 错误处理
+app.use((err, req, res, next) => {
+  console.error('服务器错误:', err);
+  res.status(500).json({
+    success: false,
+    error: '服务器内部错误'
+  });
+});
+
+// 404 处理 - 必须在所有路由之后
+app.use((req, res) => {
+  res.status(404).json({
+    success: false,
+    error: 'API 接口未找到'
+  });
+});
+
+// 启动服务器
+app.listen(PORT, () => {
+  console.log('\n🌱 Rose Garden 植物数据库 API 服务');
+  console.log('=' .repeat(50));
+  console.log(`📡 服务地址: http://localhost:${PORT}`);
+  console.log(`📚 API 文档:`);
+  console.log(`   GET  /api/health           - 健康检查`);
+  console.log(`   GET  /api/categories       - 分类列表`);
+  console.log(`   GET  /api/plants           - 植物列表（支持筛选/分页/搜索）`);
+  console.log(`   GET  /api/plants/:id       - 植物详情`);
+  console.log(`   GET  /api/plants/random/:n - 随机植物`);
+  console.log(`   GET  /api/stats            - 统计数据`);
+  console.log('=' .repeat(50));
+});
+
+module.exports = app;

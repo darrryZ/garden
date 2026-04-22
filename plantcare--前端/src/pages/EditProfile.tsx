@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, Camera, User, FileText } from 'lucide-react';
+import { ArrowLeft, Camera, Lock, User, FileText } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
-import { updateProfile, uploadAvatar } from '@/services/userService';
+import { changePassword, updateProfile } from '@/services/userService';
 
 export function EditProfile() {
   const navigate = useNavigate();
@@ -14,6 +14,11 @@ export function EditProfile() {
   const [avatar, setAvatar] = useState(user?.avatar || '');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [passwordForm, setPasswordForm] = useState({
+    oldPassword: '',
+    newPassword: '',
+    confirmPassword: '',
+  });
 
   const handleAvatarClick = () => {
     fileInputRef.current?.click();
@@ -47,6 +52,27 @@ export function EditProfile() {
       }
       if (avatar !== user?.avatar) {
         updates.avatar = avatar;
+      }
+
+      const shouldChangePassword = !!(passwordForm.oldPassword || passwordForm.newPassword || passwordForm.confirmPassword);
+
+      if (shouldChangePassword) {
+        if (passwordForm.newPassword.length < 6) {
+          throw new Error('新密码至少需要 6 位');
+        }
+
+        if (passwordForm.newPassword !== passwordForm.confirmPassword) {
+          throw new Error('两次输入的新密码不一致');
+        }
+
+        const passwordChanged = await changePassword({
+          oldPassword: passwordForm.oldPassword,
+          newPassword: passwordForm.newPassword,
+        });
+
+        if (!passwordChanged) {
+          throw new Error('密码修改失败');
+        }
       }
 
       if (Object.keys(updates).length === 0) {
@@ -161,6 +187,36 @@ export function EditProfile() {
         )}
 
         {/* 保存按钮 */}
+        <div className="mb-6 mt-10">
+          <div className="flex items-center gap-2 mb-4">
+            <Lock size={18} className="text-gray-500" />
+            <h2 className="text-base font-semibold text-gray-800">修改密码</h2>
+          </div>
+          <div className="space-y-3">
+            <input
+              type="password"
+              value={passwordForm.oldPassword}
+              onChange={(e) => setPasswordForm(prev => ({ ...prev, oldPassword: e.target.value }))}
+              className="w-full px-4 py-4 rounded-2xl border border-gray-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-all"
+              placeholder="原密码（可选）"
+            />
+            <input
+              type="password"
+              value={passwordForm.newPassword}
+              onChange={(e) => setPasswordForm(prev => ({ ...prev, newPassword: e.target.value }))}
+              className="w-full px-4 py-4 rounded-2xl border border-gray-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-all"
+              placeholder="新密码（至少 6 位）"
+            />
+            <input
+              type="password"
+              value={passwordForm.confirmPassword}
+              onChange={(e) => setPasswordForm(prev => ({ ...prev, confirmPassword: e.target.value }))}
+              className="w-full px-4 py-4 rounded-2xl border border-gray-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-all"
+              placeholder="确认新密码"
+            />
+          </div>
+        </div>
+
         <button
           type="submit"
           disabled={loading || !username.trim()}

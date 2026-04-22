@@ -9,15 +9,35 @@ const { v4: uuidv4 } = require('uuid');
 
 const DATA_FILE = path.join(__dirname, 'user-data.json');
 
+function getDefaultUserData() {
+  return {
+    users: [],
+    userPlants: [],
+    reminders: [],
+    diaryEntries: [],
+    favorites: [],
+    feedback: [],
+    version: '1.0.0'
+  };
+}
+
+function normalizeUserData(data = {}) {
+  return {
+    ...getDefaultUserData(),
+    ...data,
+    users: Array.isArray(data.users) ? data.users : [],
+    userPlants: Array.isArray(data.userPlants) ? data.userPlants : [],
+    reminders: Array.isArray(data.reminders) ? data.reminders : [],
+    diaryEntries: Array.isArray(data.diaryEntries) ? data.diaryEntries : [],
+    favorites: Array.isArray(data.favorites) ? data.favorites : [],
+    feedback: Array.isArray(data.feedback) ? data.feedback : [],
+  };
+}
+
 // 确保数据文件存在
 function ensureDataFile() {
   if (!fs.existsSync(DATA_FILE)) {
-    fs.writeFileSync(DATA_FILE, JSON.stringify({
-      users: [],
-      userPlants: [],
-      reminders: [],
-      diaryEntries: []
-    }, null, 2));
+    fs.writeFileSync(DATA_FILE, JSON.stringify(getDefaultUserData(), null, 2));
   }
 }
 
@@ -26,16 +46,16 @@ function loadUserData() {
   ensureDataFile();
   try {
     const data = fs.readFileSync(DATA_FILE, 'utf8');
-    return JSON.parse(data);
+    return normalizeUserData(JSON.parse(data));
   } catch (error) {
     console.error('加载用户数据失败:', error);
-    return { users: [], userPlants: [], reminders: [], diaryEntries: [] };
+    return getDefaultUserData();
   }
 }
 
 // 保存用户数据
 function saveUserData(data) {
-  fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
+  fs.writeFileSync(DATA_FILE, JSON.stringify(normalizeUserData(data), null, 2));
 }
 
 /**

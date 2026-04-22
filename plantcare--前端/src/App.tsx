@@ -17,6 +17,9 @@ import { ScrollArea } from './components/ui/scroll-area';
 import { AIConsultation } from './pages/AIConsultation';
 import { CitySelect } from './pages/CitySelect';
 import { AuthProvider } from './contexts/AuthContext';
+import { Favorites } from './pages/Favorites';
+import { Settings } from './pages/Settings';
+import { Feedback } from './pages/Feedback';
 
 // 只在指定的一级页面显示底部导航
 function AppContent() {
@@ -40,6 +43,9 @@ function AppContent() {
           <Route path="/ai-consultation" element={<AIConsultation />} />
           <Route path="/city-select" element={<CitySelect />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/feedback" element={<Feedback />} />
         </Routes>
         {shouldShowBottomNav && <BottomNav />}
       </main>
@@ -56,4 +62,3 @@ export default function App() {
     </Router>
   );
 }
-

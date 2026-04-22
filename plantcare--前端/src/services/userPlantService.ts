@@ -42,6 +42,12 @@ export async function getUserPlants(): Promise<OwnedPlant[]> {
         nickname: up.nickname ?? plant.name,
         addedDate: up.acquiredDate,
         healthStatus: 'Healthy',
+        lastWatered: up.lastWatered ?? undefined,
+        lastFertilized: up.lastFertilized ?? undefined,
+        waterFrequency: up.waterFrequency ?? 7,
+        fertilizeFrequency: up.fertilizeFrequency ?? 30,
+        notes: up.notes ?? undefined,
+        location: up.location ?? undefined,
         milestones: [],
         tasks: [],
       };
@@ -73,7 +79,15 @@ export async function deleteUserPlant(id: string): Promise<boolean> {
 // 更新用户植物信息（如名称）
 export async function updateUserPlant(
   id: string,
-  data: { nickname?: string; location?: string; notes?: string }
+  data: {
+    nickname?: string;
+    location?: string;
+    notes?: string;
+    waterFrequency?: number;
+    fertilizeFrequency?: number;
+    lastWatered?: string;
+    lastFertilized?: string;
+  }
 ): Promise<boolean> {
   const res = await request('PUT', `/api/user-plants/${id}`, data);
   return res.success;
@@ -102,6 +116,12 @@ export async function getUserPlantById(id: string): Promise<OwnedPlant | null> {
     nickname: up.nickname ?? plant.name,
     addedDate: up.acquiredDate,
     healthStatus: 'Healthy',
+    lastWatered: up.lastWatered ?? undefined,
+    lastFertilized: up.lastFertilized ?? undefined,
+    waterFrequency: up.waterFrequency ?? 7,
+    fertilizeFrequency: up.fertilizeFrequency ?? 30,
+    notes: up.notes ?? undefined,
+    location: up.location ?? undefined,
     milestones: [],
     tasks: [],
   };

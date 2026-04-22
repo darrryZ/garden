@@ -3,19 +3,44 @@ const path = require('path');
 
 const USER_DATA_FILE = path.join(__dirname, 'user-data.json');
 
+function getDefaultUserData() {
+  return {
+    users: [],
+    userPlants: [],
+    reminders: [],
+    diaryEntries: [],
+    favorites: [],
+    feedback: [],
+    version: '1.0.0'
+  };
+}
+
+function normalizeUserData(data = {}) {
+  return {
+    ...getDefaultUserData(),
+    ...data,
+    users: Array.isArray(data.users) ? data.users : [],
+    userPlants: Array.isArray(data.userPlants) ? data.userPlants : [],
+    reminders: Array.isArray(data.reminders) ? data.reminders : [],
+    diaryEntries: Array.isArray(data.diaryEntries) ? data.diaryEntries : [],
+    favorites: Array.isArray(data.favorites) ? data.favorites : [],
+    feedback: Array.isArray(data.feedback) ? data.feedback : [],
+  };
+}
+
 // 读取用户数据
 async function readUserData() {
   try {
     const data = await fs.readFile(USER_DATA_FILE, 'utf8');
-    return JSON.parse(data);
+    return normalizeUserData(JSON.parse(data));
   } catch {
-    return { users: [], userPlants: [], reminders: [], version: '1.0.0' };
+    return getDefaultUserData();
   }
 }
 
 // 写入用户数据
 async function writeUserData(data) {
-  await fs.writeFile(USER_DATA_FILE, JSON.stringify(data, null, 2));
+  await fs.writeFile(USER_DATA_FILE, JSON.stringify(normalizeUserData(data), null, 2));
 }
 
 // 生成 ID

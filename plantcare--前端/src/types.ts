@@ -21,6 +21,11 @@ export interface OwnedPlant extends Plant {
   addedDate: string;
   healthStatus: 'Healthy' | 'Warning' | 'Critical';
   lastWatered?: string;
+  lastFertilized?: string;
+  waterFrequency?: number;
+  fertilizeFrequency?: number;
+  notes?: string;
+  location?: string;
   milestones: Milestone[];
   tasks: Task[];
 }

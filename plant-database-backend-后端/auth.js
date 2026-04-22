@@ -7,17 +7,37 @@ const USER_DATA_FILE = path.join(__dirname, 'user-data.json');
 const JWT_SECRET = process.env.JWT_SECRET || 'rose-garden-secret-key-change-in-production';
 const JWT_EXPIRES_IN = '7d';
 
+function getDefaultUserData() {
+  return {
+    users: [],
+    userPlants: [],
+    reminders: [],
+    diaryEntries: [],
+    favorites: [],
+    feedback: [],
+    version: '1.0.0'
+  };
+}
+
+function normalizeUserData(data = {}) {
+  return {
+    ...getDefaultUserData(),
+    ...data,
+    users: Array.isArray(data.users) ? data.users : [],
+    userPlants: Array.isArray(data.userPlants) ? data.userPlants : [],
+    reminders: Array.isArray(data.reminders) ? data.reminders : [],
+    diaryEntries: Array.isArray(data.diaryEntries) ? data.diaryEntries : [],
+    favorites: Array.isArray(data.favorites) ? data.favorites : [],
+    feedback: Array.isArray(data.feedback) ? data.feedback : [],
+  };
+}
+
 // 确保用户数据文件存在
 async function ensureUserDataFile() {
   try {
     await fs.access(USER_DATA_FILE);
   } catch {
-    await fs.writeFile(USER_DATA_FILE, JSON.stringify({
-      users: [],
-      userPlants: [],
-      reminders: [],
-      version: '1.0.0'
-    }, null, 2));
+    await fs.writeFile(USER_DATA_FILE, JSON.stringify(getDefaultUserData(), null, 2));
   }
 }
 
@@ -25,12 +45,12 @@ async function ensureUserDataFile() {
 async function readUserData() {
   await ensureUserDataFile();
   const data = await fs.readFile(USER_DATA_FILE, 'utf8');
-  return JSON.parse(data);
+  return normalizeUserData(JSON.parse(data));
 }
 
 // 写入用户数据
 async function writeUserData(data) {
-  await fs.writeFile(USER_DATA_FILE, JSON.stringify(data, null, 2));
+  await fs.writeFile(USER_DATA_FILE, JSON.stringify(normalizeUserData(data), null, 2));
 }
 
 // 生成用户ID
@@ -160,6 +180,15 @@ async function updateUser(userId, updates) {
   const userIndex = data.users.findIndex(u => u.id === userId);
   if (userIndex === -1) {
     return { success: false, error: '用户不存在' };
+  }
+
+  if (
+    updates.username &&
+    data.users.some(
+      u => u.id !== userId && u.username.toLowerCase() === String(updates.username).toLowerCase()
+    )
+  ) {
+    return { success: false, error: '用户名已被使用' };
   }
   
   // 允许更新的字段

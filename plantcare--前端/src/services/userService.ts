@@ -14,6 +14,11 @@ export interface UpdateProfileData {
   avatar?: string;
 }
 
+interface ChangePasswordData {
+  oldPassword: string;
+  newPassword: string;
+}
+
 // 更新用户资料
 export async function updateProfile(data: UpdateProfileData): Promise<UserProfile | null> {
   try {
@@ -58,5 +63,15 @@ export async function uploadAvatar(file: File): Promise<string | null> {
       };
       reader.readAsDataURL(file);
     });
+  }
+}
+
+export async function changePassword(data: ChangePasswordData): Promise<boolean> {
+  try {
+    const res = await request<{ success: boolean }>('POST', '/api/auth/change-password', data);
+    return !!res.success;
+  } catch (error) {
+    console.error('修改密码失败:', error);
+    throw error;
   }
 }

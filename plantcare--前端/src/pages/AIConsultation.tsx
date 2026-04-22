@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { ChevronLeft, Send, Bot, User } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { askPlantExpert } from '@/lib/gemini';
@@ -14,11 +14,27 @@ interface Message {
   sender: 'user' | 'bot';
 }
 
+const HISTORY_KEY = 'plantcare_ai_history';
+const QUICK_QUESTIONS = ['叶子发黄怎么办？', '多久浇一次水？', '这是什么植物？'];
+
 export function AIConsultation() {
   const navigate = useNavigate();
-  const [messages, setMessages] = useState<Message[]>([
-    { id: '1', text: '您好！我是您的植物养护助手。有什么我可以帮您的吗？', sender: 'bot' }
-  ]);
+  const location = useLocation();
+  const [messages, setMessages] = useState<Message[]>(() => {
+    const raw = localStorage.getItem(HISTORY_KEY);
+    if (raw) {
+      try {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          return parsed;
+        }
+      } catch {
+        // ignore
+      }
+    }
+
+    return [{ id: '1', text: '您好！我是您的植物养护助手。有什么我可以帮您的吗？', sender: 'bot' }];
+  });
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -29,11 +45,24 @@ export function AIConsultation() {
     }
   }, [messages]);
 
-  const handleSend = async () => {
-    if (!input.trim() || isLoading) return;
+  useEffect(() => {
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(messages));
+  }, [messages]);
 
-    const userMsg: Message = { id: Date.now().toString(), text: input, sender: 'user' };
-    const currentInput = input;
+  useEffect(() => {
+    const prompt = (location.state as { prompt?: string } | null)?.prompt;
+    if (prompt) {
+      setInput(prompt);
+      navigate(location.pathname, { replace: true, state: null });
+    }
+  }, [location.pathname, location.state, navigate]);
+
+  const handleSend = async (customInput?: string) => {
+    const text = (customInput ?? input).trim();
+    if (!text || isLoading) return;
+
+    const userMsg: Message = { id: Date.now().toString(), text, sender: 'user' };
+    const currentInput = text;
     setMessages(prev => [...prev, userMsg]);
     setInput('');
     setIsLoading(true);
@@ -117,7 +146,19 @@ export function AIConsultation() {
         )}
       </div>
 
-      <div className="p-6 border-t border-gray-100 bg-white">
+      <div className="p-6 border-t border-gray-100 bg-white space-y-3">
+        <div className="flex gap-2 overflow-x-auto no-scrollbar">
+          {QUICK_QUESTIONS.map(question => (
+            <button
+              key={question}
+              onClick={() => handleSend(question)}
+              className="px-3 py-2 rounded-full bg-gray-100 text-xs text-gray-600 whitespace-nowrap"
+              disabled={isLoading}
+            >
+              {question}
+            </button>
+          ))}
+        </div>
         <div className="flex gap-2">
           <Input
             placeholder="描述您的问题..."
