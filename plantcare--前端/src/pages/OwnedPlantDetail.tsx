@@ -1,9 +1,12 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import {
+  ChevronDown,
   ChevronLeft,
+  ChevronUp,
   Check,
   Droplets,
   Scissors,
+  Settings,
   ShieldAlert,
   Sprout,
   Thermometer,
@@ -11,6 +14,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Input } from '@/components/ui/input';
 import { cn } from '@/lib/utils';
 import { useState, useRef, useEffect, useMemo } from 'react';
 import type { OwnedPlant, Milestone } from '@/types';
@@ -26,7 +30,11 @@ export function OwnedPlantDetail() {
   const [milestones, setMilestones] = useState<Milestone[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [isSavingName, setIsSavingName] = useState(false);
   const [actionKey, setActionKey] = useState<string | null>(null);
+  const [isCareSheetOpen, setIsCareSheetOpen] = useState(false);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [nicknameDraft, setNicknameDraft] = useState('');
 
   const [milestoneTitle, setMilestoneTitle] = useState('');
   const [milestoneContent, setMilestoneContent] = useState('');
@@ -138,7 +146,7 @@ export function OwnedPlantDetail() {
 
   const handleDelete = async () => {
     if (!plant || isDeleting) return;
-    const confirmed = window.confirm(`确认将 ${plant.nickname} 移出花园吗？`);
+    const confirmed = window.confirm(`确认宣布 ${plant.nickname} 已死亡并移出花园吗？`);
     if (!confirmed) return;
 
     setIsDeleting(true);
@@ -149,6 +157,34 @@ export function OwnedPlantDetail() {
       }
     } finally {
       setIsDeleting(false);
+    }
+  };
+
+  const handleOpenSettings = () => {
+    if (!plant) return;
+    setNicknameDraft(plant.nickname);
+    setIsSettingsOpen(true);
+  };
+
+  const handleRename = async () => {
+    if (!plant || isSavingName) return;
+
+    const trimmedName = nicknameDraft.trim();
+    if (!trimmedName) return;
+    if (trimmedName === plant.nickname) {
+      setIsSettingsOpen(false);
+      return;
+    }
+
+    setIsSavingName(true);
+    try {
+      const success = await updateUserPlant(plant.id, { nickname: trimmedName });
+      if (success) {
+        await loadPlant();
+        setIsSettingsOpen(false);
+      }
+    } finally {
+      setIsSavingName(false);
     }
   };
 
@@ -165,6 +201,7 @@ export function OwnedPlantDetail() {
         title: '浇水',
         subtitle: waterDueIn <= 0 ? '现在就可以浇水' : `${waterDueIn} 天后需要浇水`,
         tone: 'bg-blue-50 text-blue-600',
+        dueIn: waterDueIn,
       },
       {
         id: 'fertilize',
@@ -172,6 +209,7 @@ export function OwnedPlantDetail() {
         title: '施肥',
         subtitle: fertilizeDueIn <= 0 ? '现在适合补充营养' : `${fertilizeDueIn} 天后需要施肥`,
         tone: 'bg-green-50 text-green-600',
+        dueIn: fertilizeDueIn,
       },
       {
         id: 'prune',
@@ -179,12 +217,15 @@ export function OwnedPlantDetail() {
         title: '修剪',
         subtitle: '记录一次修剪，留下养护足迹',
         tone: 'bg-amber-50 text-amber-600',
+        dueIn: null,
       },
     ] as const;
   }, [plant]);
 
   const healthScore = plant ? getPlantHealthScore(plant) : 0;
   const healthText = getPlantHealthText(healthScore);
+  const dueNowCount = careTasks.filter(task => task.dueIn !== null && task.dueIn <= 0).length;
+  const nextCareHint = dueNowCount > 0 ? `有 ${dueNowCount} 项任务现在可以处理` : careTasks[0]?.subtitle ?? '展开查看今日养护安排';
 
   const careCalendar = useMemo(() => {
     if (!plant) return [];
@@ -214,19 +255,18 @@ export function OwnedPlantDetail() {
   if (!plant) return <div className="p-6">Plant not found</div>;
 
   return (
-    <div className="pb-40 min-h-screen bg-white">
+    <div className="pb-56 min-h-screen bg-white">
       <header className="flex justify-between items-center p-6 sticky top-0 bg-white/80 backdrop-blur z-10">
         <button onClick={() => navigate(-1)} className="p-2 -ml-2">
           <ChevronLeft size={28} />
         </button>
         <h1 className="text-lg font-bold">{plant.nickname}</h1>
         <button
-          onClick={handleDelete}
-          className="p-2 -mr-2 text-red-500"
-          disabled={isDeleting}
-          title="移出花园"
+          onClick={handleOpenSettings}
+          className="p-2 -mr-2 text-gray-600"
+          title="设置"
         >
-          <Trash2 size={18} />
+          <Settings size={18} />
         </button>
       </header>
 
@@ -281,43 +321,6 @@ export function OwnedPlantDetail() {
             <div className="h-full bg-gradient-to-r from-green-400 to-green-600 rounded-full" style={{ width: `${healthScore}%` }} />
           </div>
           <p className="text-xs text-gray-500 mt-3">{healthText}</p>
-        </section>
-
-        <section className="mb-8">
-          <div className="flex justify-between items-center mb-4">
-            <div className="flex items-center gap-2">
-              <div className="w-6 h-6 bg-green-200 rounded-lg" />
-              <h3 className="font-bold">养护任务</h3>
-            </div>
-          </div>
-          <div className="space-y-3">
-            {careTasks.map(task => {
-              const Icon = task.icon;
-              return (
-                <div key={task.id} className="bg-white border border-gray-100 rounded-3xl p-4 shadow-sm">
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="flex items-start gap-3">
-                      <div className={cn('w-11 h-11 rounded-2xl flex items-center justify-center', task.tone)}>
-                        <Icon size={18} />
-                      </div>
-                      <div>
-                        <p className="font-bold text-gray-800">{task.title}</p>
-                        <p className="text-xs text-gray-500 mt-1">{task.subtitle}</p>
-                      </div>
-                    </div>
-                    <Button
-                      size="sm"
-                      className="rounded-full"
-                      disabled={actionKey === task.id}
-                      onClick={() => handleCareAction(task.id)}
-                    >
-                      {actionKey === task.id ? '处理中...' : '完成'}
-                    </Button>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
         </section>
 
         <section className="mb-8">
@@ -498,6 +501,24 @@ export function OwnedPlantDetail() {
           </div>
         </section>
 
+        <section className="mb-8">
+          <button
+            onClick={handleDelete}
+            disabled={isDeleting}
+            className="w-full rounded-[28px] border border-red-100 bg-red-50 px-5 py-4 text-left transition hover:bg-red-100 disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-red-500 shadow-sm">
+                <Trash2 size={18} />
+              </div>
+              <div>
+                <p className="font-bold text-red-600">宣布死亡</p>
+                <p className="mt-1 text-xs text-red-400">{isDeleting ? '处理中...' : '将植物移出花园并结束记录'}</p>
+              </div>
+            </div>
+          </button>
+        </section>
+
         <section className="mb-10 bg-gray-50 rounded-[28px] p-5">
           <div className="flex items-center gap-2 mb-4">
             <ShieldAlert size={18} className="text-primary" />
@@ -518,6 +539,97 @@ export function OwnedPlantDetail() {
             </button>
           </div>
         </section>
+      </div>
+
+      {isSettingsOpen && (
+        <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/30 px-6" onClick={() => setIsSettingsOpen(false)}>
+          <div
+            className="w-full max-w-sm rounded-[28px] bg-white p-6 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="mb-4">
+              <h3 className="text-lg font-bold">植物设置</h3>
+              <p className="mt-1 text-sm text-gray-500">修改你给植物设置的名称。</p>
+            </div>
+            <div className="space-y-4">
+              <Input
+                value={nicknameDraft}
+                onChange={(e) => setNicknameDraft(e.target.value)}
+                placeholder="请输入植物名称"
+                maxLength={20}
+              />
+              <div className="flex justify-end gap-2">
+                <Button variant="ghost" onClick={() => setIsSettingsOpen(false)}>
+                  取消
+                </Button>
+                <Button onClick={handleRename} disabled={!nicknameDraft.trim() || isSavingName}>
+                  {isSavingName ? '保存中...' : '保存'}
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {isCareSheetOpen && (
+        <button
+          type="button"
+          aria-label="关闭养护任务面板"
+          className="fixed inset-0 z-20 bg-black/20"
+          onClick={() => setIsCareSheetOpen(false)}
+        />
+      )}
+
+      <div className="fixed bottom-0 left-1/2 z-30 w-full max-w-md -translate-x-1/2 px-4 pb-4">
+        <div className="overflow-hidden rounded-[32px] border border-gray-100 bg-white shadow-[0_-10px_30px_rgba(15,23,42,0.12)]">
+          <button
+            type="button"
+            className="flex w-full items-center gap-3 px-5 py-4 text-left"
+            onClick={() => setIsCareSheetOpen(open => !open)}
+          >
+            <div className="flex-1">
+              <div className="flex items-center gap-2">
+                <div className="h-6 w-6 rounded-lg bg-green-200" />
+                <h3 className="font-bold">养护任务</h3>
+              </div>
+              <p className="mt-1 text-xs text-gray-500">{nextCareHint}</p>
+            </div>
+            <div className="rounded-full bg-gray-100 p-2 text-gray-500">
+              {isCareSheetOpen ? <ChevronDown size={18} /> : <ChevronUp size={18} />}
+            </div>
+          </button>
+
+          {isCareSheetOpen && (
+            <div className="max-h-[60vh] space-y-3 overflow-y-auto px-4 pb-5">
+              {careTasks.map(task => {
+                const Icon = task.icon;
+                return (
+                  <div key={task.id} className="rounded-3xl border border-gray-100 bg-gray-50 p-4">
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex items-start gap-3">
+                        <div className={cn('flex h-11 w-11 items-center justify-center rounded-2xl', task.tone)}>
+                          <Icon size={18} />
+                        </div>
+                        <div>
+                          <p className="font-bold text-gray-800">{task.title}</p>
+                          <p className="mt-1 text-xs text-gray-500">{task.subtitle}</p>
+                        </div>
+                      </div>
+                      <Button
+                        size="sm"
+                        className="rounded-full"
+                        disabled={actionKey === task.id}
+                        onClick={() => handleCareAction(task.id)}
+                      >
+                        {actionKey === task.id ? '处理中...' : '完成'}
+                      </Button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
