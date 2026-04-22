@@ -1,0 +1,284 @@
+{
+  "version": "1.0",
+  "description": "植愈App植物症状诊断知识库",
+  "symptoms": [
+    {
+      "id": "succulent_leaf_soft",
+      "name": "多肉叶片变软",
+      "keywords": ["多肉", "叶片软", "叶子软", "发软", "蔫", "多肉变软"],
+      "plant_types": ["succulent"],
+      "causes": [
+        {
+          "id": "normal_consumption",
+          "name": "正常消耗",
+          "description": "底部老叶自然老化",
+          "judgment": "只有底部1-2片老叶变软，新叶饱满正常",
+          "urgency": "low",
+          "solution": {
+            "steps": [
+              "无需特殊处理",
+              "等待老叶自然干枯脱落",
+              "可轻轻摘除已完全干枯的叶片"
+            ],
+            "recovery_time": "1-2周自然脱落"
+          }
+        },
+        {
+          "id": "underwatering",
+          "name": "缺水",
+          "description": "土壤干燥，植株缺水",
+          "judgment": "土壤完全干燥，盆很轻，叶片整体发软起皱",
+          "urgency": "medium",
+          "solution": {
+            "steps": [
+              "采用浸盆法补水：将花盆底部浸入水中10-15分钟",
+              "或沿盆边缓慢浇透水，直到水从盆底流出",
+              "移至通风良好的地方，避免积水",
+              "下次浇水需等土壤完全干透（约7-10天）"
+            ],
+            "recovery_time": "2-3天恢复饱满",
+            "prevention": "遵循'干透浇透'原则，夏季可适当延长浇水间隔"
+          }
+        },
+        {
+          "id": "root_rot",
+          "name": "烂根",
+          "description": "浇水过多导致根系腐烂",
+          "judgment": "土壤潮湿有异味，叶片透明化水，茎基部发黑",
+          "urgency": "high",
+          "solution": {
+            "steps": [
+              "立即脱盆，检查根系",
+              "用消毒剪刀剪除所有腐烂、发黑的根系",
+              "保留健康根系（白色或浅黄色）",
+              "多菌灵溶液浸泡30分钟消毒",
+              "阴凉处晾根3-5天，伤口愈合",
+              "换新土重新栽种（推荐颗粒土70%+泥炭30%）",
+              "7天内不浇水，之后少量给水"
+            ],
+            "recovery_time": "2-4周恢复生长",
+            "prevention": "宁干勿湿，土壤干透再浇水，确保盆底有排水孔"
+          }
+        },
+        {
+          "id": "dormancy",
+          "name": "休眠期",
+          "description": "夏季或冬季休眠，生长停滞",
+          "judgment": "夏/冬季，温度高于35℃或低于10℃，叶片轻微皱缩",
+          "urgency": "low",
+          "solution": {
+            "steps": [
+              "夏季：遮阴通风，少量给水（沿盆边1-2勺）",
+              "冬季：移至室内，保持10℃以上，断水",
+              "避免暴晒和闷热环境",
+              "等春秋生长期恢复正常养护"
+            ],
+            "recovery_time": "休眠期结束后自然恢复"
+          }
+        }
+      ]
+    },
+    {
+      "id": "leaf_yellowing",
+      "name": "叶片发黄",
+      "keywords": ["叶子黄", "叶片黄", "发黄", "变黄", "黄叶"],
+      "plant_types": ["all"],
+      "causes": [
+        {
+          "id": "overwatering_yellow",
+          "name": "浇水过多",
+          "description": "土壤长期潮湿，根系缺氧",
+          "judgment": "土壤湿，老叶先黄，叶脉也黄",
+          "urgency": "high",
+          "solution": {
+            "steps": [
+              "立即停止浇水",
+              "移至通风处，加速土壤干燥",
+              "松土增加透气性",
+              "严重时脱盆检查根系，处理烂根"
+            ]
+          }
+        },
+        {
+          "id": "underwatering_yellow",
+          "name": "浇水过少",
+          "description": "长期干旱，植株缺水",
+          "judgment": "土壤干，叶片发黄同时萎蔫",
+          "urgency": "medium",
+          "solution": {
+            "steps": [
+              "浸盆法补水",
+              "剪除严重黄叶",
+              "调整浇水频率"
+            ]
+          }
+        },
+        {
+          "id": "nitrogen_deficiency",
+          "name": "缺氮",
+          "description": "氮素不足，老叶先黄",
+          "judgment": "老叶均匀发黄，从叶尖开始，新叶正常",
+          "urgency": "medium",
+          "solution": {
+            "steps": [
+              "施用含氮肥料（尿素或花多多10号）",
+              "稀释1000倍浇灌",
+              "2周后再次施用"
+            ]
+          }
+        },
+        {
+          "id": "iron_deficiency",
+          "name": "缺铁",
+          "description": "铁元素不足，新叶黄化",
+          "judgment": "新叶发黄，叶脉保持绿色，老叶正常",
+          "urgency": "medium",
+          "solution": {
+            "steps": [
+              "施用螯合铁或硫酸亚铁",
+              "稀释1000倍浇灌或喷施叶面",
+              "调节土壤pH至微酸性"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "leaf_wilt",
+      "name": "叶片枯萎",
+      "keywords": ["叶子枯萎", "叶片枯萎", "萎蔫", "下垂", "发蔫"],
+      "plant_types": ["all"],
+      "causes": [
+        {
+          "id": "severe_drought",
+          "name": "严重缺水",
+          "description": "长期未浇水，植株脱水",
+          "judgment": "土壤干裂，叶片严重萎蔫",
+          "urgency": "high",
+          "solution": {
+            "steps": [
+              "浸盆法补水30分钟",
+              "移至阴凉处恢复",
+              "剪除无法恢复的枯叶"
+            ]
+          }
+        },
+        {
+          "id": "root_rot_wilt",
+          "name": "烂根",
+          "description": "根系腐烂，无法吸水",
+          "judgment": "土壤湿但叶片萎蔫，有异味",
+          "urgency": "high",
+          "solution": {
+            "steps": [
+              "脱盆检查根系",
+              "剪除烂根，消毒处理",
+              "换新土重栽"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "diseases": [
+    {
+      "id": "black_rot",
+      "name": "黑腐病",
+      "keywords": ["黑腐", "茎黑", "化水", "透明", "发黑", "腐烂"],
+      "plant_types": ["succulent"],
+      "symptoms": "茎基部发黑，叶片透明化水，有臭味",
+      "urgency": "critical",
+      "contagious": true,
+      "solution": {
+        "steps": [
+          "立即隔离病株",
+          "用消毒刀片砍头，保留健康茎段",
+          "切除所有发黑部分，直到看见绿色健康组织",
+          "伤口涂抹多菌灵粉",
+          "阴凉处晾伤口3-5天",
+          "扦插到新土中，暂不浇水"
+        ],
+        "medicine": "多菌灵、甲基托布津",
+        "prevention": "控制浇水，保持通风，避免高温高湿"
+      }
+    },
+    {
+      "id": "anthracnose",
+      "name": "炭疽病",
+      "keywords": ["炭疽", "褐斑", "圆斑", "黑斑"],
+      "plant_types": ["all"],
+      "symptoms": "叶片出现圆形或不规则褐斑，边缘深色，中心浅色",
+      "urgency": "medium",
+      "contagious": true,
+      "solution": {
+        "steps": [
+          "摘除所有病叶，远离花盆丢弃",
+          "改善通风环境",
+          "避免叶面喷水"
+        ],
+        "medicine": "咪鲜胺1500倍液、苯醚甲环唑2000倍液",
+        "spray_interval": "7天1次，连续2-3次",
+        "prevention": "避免密植，保持良好通风"
+      }
+    },
+    {
+      "id": "powdery_mildew",
+      "name": "白粉病",
+      "keywords": ["白粉", "白毛", "粉状", "白色"],
+      "plant_types": ["all"],
+      "symptoms": "叶片正面有白色粉状物，可擦掉，后期叶片发黄",
+      "urgency": "medium",
+      "contagious": true,
+      "solution": {
+        "steps": [
+          "摘除严重病叶",
+          "增加光照",
+          "降低环境湿度"
+        ],
+        "medicine": "硫磺悬浮剂500倍、三唑酮1500倍",
+        "organic": "小苏打水（5g:1L）喷雾、牛奶水（1:9）喷雾",
+        "spray_interval": "5-7天1次，连续3次",
+        "prevention": "增加光照，避免过度密植"
+      }
+    },
+    {
+      "id": "gray_mold",
+      "name": "灰霉病",
+      "keywords": ["灰霉", "灰色", "霉层", "发霉"],
+      "plant_types": ["all"],
+      "symptoms": "叶片、花朵出现灰色霉层，潮湿环境多发",
+      "urgency": "high",
+      "contagious": true,
+      "solution": {
+        "steps": [
+          "清除所有病组织",
+          "降低湿度，加强通风",
+          "避免叶面喷水"
+        ],
+        "medicine": "嘧霉胺1000倍、腐霉利1500倍",
+        "spray_interval": "5天1次，连续3次",
+        "prevention": "控制浇水，保持通风，避免低温高湿"
+      }
+    },
+    {
+      "id": "root_rot_disease",
+      "name": "根腐病",
+      "keywords": ["根腐", "烂根", "根黑", "根烂"],
+      "plant_types": ["all"],
+      "symptoms": "根部变黑腐烂，植株萎蔫，土壤有臭味",
+      "urgency": "high",
+      "contagious": false,
+      "solution": {
+        "steps": [
+          "脱盆清洗根系",
+          "剪除所有腐烂根系",
+          "多菌灵浸泡30分钟",
+          "换新土重栽",
+          "控制浇水"
+        ],
+        "medicine": "恶霉灵3000倍灌根、多菌灵500倍灌根",
+        "prevention": "控制浇水，土壤透气，盆底垫陶粒"
+      }
+    }
+  ]
+}

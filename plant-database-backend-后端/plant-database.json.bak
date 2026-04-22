@@ -1,0 +1,4324 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-04-03",
+  "totalCount": 125,
+  "categories": [
+    {
+      "id": "foliage",
+      "name": "观叶植物",
+      "icon": "🌿"
+    },
+    {
+      "id": "succulent",
+      "name": "多肉植物",
+      "icon": "🌵"
+    },
+    {
+      "id": "flowering",
+      "name": "观花植物",
+      "icon": "🌸"
+    },
+    {
+      "id": "herb",
+      "name": "香草植物",
+      "icon": "🌱"
+    },
+    {
+      "id": "fern",
+      "name": "蕨类植物",
+      "icon": "🍃"
+    },
+    {
+      "id": "cactus",
+      "name": "仙人掌",
+      "icon": "🌵"
+    },
+    {
+      "id": "climbing",
+      "name": "爬藤植物",
+      "icon": "🌿"
+    },
+    {
+      "id": "aquatic",
+      "name": "水培植物",
+      "icon": "💧"
+    }
+  ],
+  "difficultyLevels": [
+    {
+      "level": 1,
+      "name": "新手友好",
+      "description": "极易养护，几乎不死"
+    },
+    {
+      "level": 2,
+      "name": "简单",
+      "description": "偶尔照顾即可"
+    },
+    {
+      "level": 3,
+      "name": "中等",
+      "description": "需要定期关注"
+    },
+    {
+      "level": 4,
+      "name": "较难",
+      "description": "需要专业护理"
+    },
+    {
+      "level": 5,
+      "name": "专家级",
+      "description": "需要精细照料"
+    }
+  ],
+  "lightLevels": [
+    {
+      "level": 1,
+      "name": "耐阴",
+      "description": "低光照环境"
+    },
+    {
+      "level": 2,
+      "name": "半阴",
+      "description": "散射光"
+    },
+    {
+      "level": 3,
+      "name": "明亮散射光",
+      "description": "明亮但避免直射"
+    },
+    {
+      "level": 4,
+      "name": "半日照",
+      "description": "部分直射光"
+    },
+    {
+      "level": 5,
+      "name": "全日照",
+      "description": "充足直射光"
+    }
+  ],
+  "waterFrequency": [
+    {
+      "code": "rare",
+      "name": "极少",
+      "days": 14,
+      "description": "每 2 周一次"
+    },
+    {
+      "code": "low",
+      "name": "较少",
+      "days": 10,
+      "description": "每 10 天一次"
+    },
+    {
+      "code": "medium",
+      "name": "适中",
+      "days": 7,
+      "description": "每周一次"
+    },
+    {
+      "code": "high",
+      "name": "较多",
+      "days": 4,
+      "description": "每 4-5 天一次"
+    },
+    {
+      "code": "frequent",
+      "name": "频繁",
+      "days": 2,
+      "description": "每 2-3 天一次"
+    }
+  ],
+  "plants": [
+    {
+      "id": "p001",
+      "name": "绿萝",
+      "scientificName": "Epipremnum aureum",
+      "category": "foliage",
+      "family": "天南星科",
+      "origin": "所罗门群岛",
+      "difficulty": 1,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "对宠物有毒",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "新手友好",
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p002",
+      "name": "虎皮兰",
+      "scientificName": "Sansevieria trifasciata",
+      "category": "foliage",
+      "family": "天门冬科",
+      "origin": "西非",
+      "difficulty": 1,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "对宠物安全",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "新手友好",
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p003",
+      "name": "吊兰",
+      "scientificName": "Chlorophytum comosum",
+      "category": "foliage",
+      "family": "天门冬科",
+      "origin": "南非",
+      "difficulty": 1,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "对宠物安全",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "新手友好",
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=400"
+    },
+    {
+      "id": "p004",
+      "name": "发财树",
+      "scientificName": "Pachira aquatica",
+      "category": "foliage",
+      "family": "锦葵科",
+      "origin": "中美洲",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=400"
+    },
+    {
+      "id": "p005",
+      "name": "龟背竹",
+      "scientificName": "Monstera deliciosa",
+      "category": "foliage",
+      "family": "天南星科",
+      "origin": "墨西哥",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "对宠物有毒",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=400"
+    },
+    {
+      "id": "p006",
+      "name": "琴叶榕",
+      "scientificName": "Ficus lyrata",
+      "category": "foliage",
+      "family": "桑科",
+      "origin": "西非",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1545241047-6083a3684587?w=400"
+    },
+    {
+      "id": "p007",
+      "name": "橡皮树",
+      "scientificName": "Ficus elastica",
+      "category": "foliage",
+      "family": "桑科",
+      "origin": "印度",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1598880940371-c756e015fea1?w=400"
+    },
+    {
+      "id": "p008",
+      "name": "滴水观音",
+      "scientificName": "Alocasia macrorrhiza",
+      "category": "foliage",
+      "family": "天南星科",
+      "origin": "东南亚",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "对宠物有毒",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p009",
+      "name": "万年青",
+      "scientificName": "Rohdea japonica",
+      "category": "foliage",
+      "family": "天门冬科",
+      "origin": "中国",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "对宠物有毒",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=400"
+    },
+    {
+      "id": "p010",
+      "name": "竹芋",
+      "scientificName": "Calathea spp.",
+      "category": "foliage",
+      "family": "竹芋科",
+      "origin": "热带美洲",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1599598425947-520afb0fd5b7?w=400"
+    },
+    {
+      "id": "p011",
+      "name": "合果芋",
+      "scientificName": "Syngonium podophyllum",
+      "category": "foliage",
+      "family": "天南星科",
+      "origin": "热带美洲",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p012",
+      "name": "椒草",
+      "scientificName": "Peperomia spp.",
+      "category": "foliage",
+      "family": "胡椒科",
+      "origin": "热带美洲",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p013",
+      "name": "冷水花",
+      "scientificName": "Pilea cadierei",
+      "category": "foliage",
+      "family": "荨麻科",
+      "origin": "越南",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p014",
+      "name": "网纹草",
+      "scientificName": "Fittonia spp.",
+      "category": "foliage",
+      "family": "爵床科",
+      "origin": "秘鲁",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1598880940371-c756e015fea1?w=400"
+    },
+    {
+      "id": "p015",
+      "name": "镜面草",
+      "scientificName": "Pilea peperomioides",
+      "category": "foliage",
+      "family": "荨麻科",
+      "origin": "中国云南",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1599598425947-520afb0fd5b7?w=400"
+    },
+    {
+      "id": "p016",
+      "name": "铜钱草",
+      "scientificName": "Hydrocotyle vulgaris",
+      "category": "foliage",
+      "family": "伞形科",
+      "origin": "欧洲",
+      "difficulty": 1,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "对宠物安全",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "新手友好",
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1599598425947-520afb0fd5b7?w=400"
+    },
+    {
+      "id": "p017",
+      "name": "豆瓣绿",
+      "scientificName": "Peperomia tetraphylla",
+      "category": "foliage",
+      "family": "胡椒科",
+      "origin": "热带美洲",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p018",
+      "name": "文竹",
+      "scientificName": "Asparagus setaceus",
+      "category": "foliage",
+      "family": "天门冬科",
+      "origin": "南非",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p019",
+      "name": "富贵竹",
+      "scientificName": "Dracaena sanderiana",
+      "category": "foliage",
+      "family": "天门冬科",
+      "origin": "西非",
+      "difficulty": 1,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "对宠物安全",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "新手友好",
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1599598425947-520afb0fd5b7?w=400"
+    },
+    {
+      "id": "p020",
+      "name": "巴西木",
+      "scientificName": "Dracaena fragrans",
+      "category": "foliage",
+      "family": "天门冬科",
+      "origin": "非洲",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p021",
+      "name": "也门铁",
+      "scientificName": "Dracaena arborea",
+      "category": "foliage",
+      "family": "天门冬科",
+      "origin": "也门",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p022",
+      "name": "千年木",
+      "scientificName": "Cordyline fruticosa",
+      "category": "foliage",
+      "family": "天门冬科",
+      "origin": "东南亚",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p023",
+      "name": "散尾葵",
+      "scientificName": "Dypsis lutescens",
+      "category": "foliage",
+      "family": "棕榈科",
+      "origin": "马达加斯加",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p024",
+      "name": "袖珍椰子",
+      "scientificName": "Chamaedorea elegans",
+      "category": "foliage",
+      "family": "棕榈科",
+      "origin": "墨西哥",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p025",
+      "name": "棕竹",
+      "scientificName": "Rhapis excelsa",
+      "category": "foliage",
+      "family": "棕榈科",
+      "origin": "中国",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p026",
+      "name": "鹅掌柴",
+      "scientificName": "Schefflera heptaphylla",
+      "category": "foliage",
+      "family": "五加科",
+      "origin": "中国",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p027",
+      "name": "鸭脚木",
+      "scientificName": "Schefflera arboricola",
+      "category": "foliage",
+      "family": "五加科",
+      "origin": "台湾",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p028",
+      "name": "孔雀木",
+      "scientificName": "Dizygotheca elegantissima",
+      "category": "foliage",
+      "family": "五加科",
+      "origin": "太平洋岛屿",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p029",
+      "name": "八角金盘",
+      "scientificName": "Fatsia japonica",
+      "category": "foliage",
+      "family": "五加科",
+      "origin": "日本",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p030",
+      "name": "春羽",
+      "scientificName": "Philodendron bipinnatifidum",
+      "category": "foliage",
+      "family": "天南星科",
+      "origin": "南美",
+      "difficulty": 2,
+      "light": 2,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "避免强光直射，适合室内养护"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴",
+        "净化空气"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p031",
+      "name": "芦荟",
+      "scientificName": "Aloe vera",
+      "category": "succulent",
+      "family": "阿福花科",
+      "origin": "阿拉伯半岛",
+      "difficulty": 1,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "对宠物安全",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "新手友好",
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=400"
+    },
+    {
+      "id": "p032",
+      "name": "玉树",
+      "scientificName": "Crassula ovata",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "南非",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p033",
+      "name": "金枝玉叶",
+      "scientificName": "Portulacaria afra",
+      "category": "succulent",
+      "family": "马齿苋科",
+      "origin": "南非",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p034",
+      "name": "石莲花",
+      "scientificName": "Echeveria spp.",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "墨西哥",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p035",
+      "name": "观音莲",
+      "scientificName": "Sempervivum tectorum",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "欧洲",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p036",
+      "name": "虹之玉",
+      "scientificName": "Sedum rubrotinctum",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "墨西哥",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p037",
+      "name": "乙女心",
+      "scientificName": "Sedum pachyphyllum",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "墨西哥",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p038",
+      "name": "黄丽",
+      "scientificName": "Sedum adolphii",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "墨西哥",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=400"
+    },
+    {
+      "id": "p039",
+      "name": "白牡丹",
+      "scientificName": "Graptoveria 'Titubans'",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "园艺种",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p040",
+      "name": "黑法师",
+      "scientificName": "Aeonium arboreum",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "加那利群岛",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p041",
+      "name": "紫珍珠",
+      "scientificName": "Echeveria 'Perle von Nürnberg'",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "园艺种",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p042",
+      "name": "桃蛋",
+      "scientificName": "Graptopetalum amethystinum",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "墨西哥",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p043",
+      "name": "熊童子",
+      "scientificName": "Cotyledon tomentosa",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "南非",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p044",
+      "name": "玉露",
+      "scientificName": "Haworthia cooperi",
+      "category": "succulent",
+      "family": "阿福花科",
+      "origin": "南非",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=400"
+    },
+    {
+      "id": "p045",
+      "name": "寿",
+      "scientificName": "Haworthia retusa",
+      "category": "succulent",
+      "family": "阿福花科",
+      "origin": "南非",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p046",
+      "name": "万象",
+      "scientificName": "Haworthia maughanii",
+      "category": "succulent",
+      "family": "阿福花科",
+      "origin": "南非",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p047",
+      "name": "生石花",
+      "scientificName": "Lithops spp.",
+      "category": "succulent",
+      "family": "番杏科",
+      "origin": "南非",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p048",
+      "name": "佛珠",
+      "scientificName": "Senecio rowleyanus",
+      "category": "succulent",
+      "family": "菊科",
+      "origin": "南非",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=400"
+    },
+    {
+      "id": "p049",
+      "name": "情人泪",
+      "scientificName": "Senecio herreianus",
+      "category": "succulent",
+      "family": "菊科",
+      "origin": "南非",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p050",
+      "name": "钱串",
+      "scientificName": "Crassula perforata",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "南非",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p051",
+      "name": "小米星",
+      "scientificName": "Crassula rupestris",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "南非",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=400"
+    },
+    {
+      "id": "p052",
+      "name": "火祭",
+      "scientificName": "Crassula capitella",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "南非",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p053",
+      "name": "红稚莲",
+      "scientificName": "Echeveria macdougallii",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "墨西哥",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p054",
+      "name": "姬胧月",
+      "scientificName": "Graptopetalum paraguayense",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "墨西哥",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p055",
+      "name": "胧月",
+      "scientificName": "Graptopetalum paraguayense",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "墨西哥",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p056",
+      "name": "冬美人",
+      "scientificName": "Graptoveria 'Fred Ives'",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "园艺种",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p057",
+      "name": "不死鸟",
+      "scientificName": "Kalanchoe daigremontiana",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "马达加斯加",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p058",
+      "name": "落地生根",
+      "scientificName": "Bryophyllum pinnatum",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "马达加斯加",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p059",
+      "name": "月兔耳",
+      "scientificName": "Kalanchoe tomentosa",
+      "category": "succulent",
+      "family": "景天科",
+      "origin": "马达加斯加",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台",
+        "夏季注意遮阴通风"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱",
+        "多肉"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p060",
+      "name": "白掌",
+      "scientificName": "Spathiphyllum wallisii",
+      "category": "flowering",
+      "family": "天南星科",
+      "origin": "哥伦比亚",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1599598425947-520afb0fd5b7?w=400"
+    },
+    {
+      "id": "p061",
+      "name": "红掌",
+      "scientificName": "Anthurium andraeanum",
+      "category": "flowering",
+      "family": "天南星科",
+      "origin": "哥伦比亚",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1550951298-5c7b95a66b90?w=400"
+    },
+    {
+      "id": "p062",
+      "name": "粉掌",
+      "scientificName": "Anthurium andraeanum 'Pink'",
+      "category": "flowering",
+      "family": "天南星科",
+      "origin": "园艺种",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p063",
+      "name": "马蹄莲",
+      "scientificName": "Zantedeschia aethiopica",
+      "category": "flowering",
+      "family": "天南星科",
+      "origin": "南非",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p064",
+      "name": "海芋",
+      "scientificName": "Alocasia odora",
+      "category": "flowering",
+      "family": "天南星科",
+      "origin": "东南亚",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p065",
+      "name": "君子兰",
+      "scientificName": "Clivia miniata",
+      "category": "flowering",
+      "family": "石蒜科",
+      "origin": "南非",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p066",
+      "name": "蝴蝶兰",
+      "scientificName": "Phalaenopsis aphrodite",
+      "category": "flowering",
+      "family": "兰科",
+      "origin": "台湾",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p067",
+      "name": "仙客来",
+      "scientificName": "Cyclamen persicum",
+      "category": "flowering",
+      "family": "报春花科",
+      "origin": "地中海",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p068",
+      "name": "长寿花",
+      "scientificName": "Kalanchoe blossfeldiana",
+      "category": "flowering",
+      "family": "景天科",
+      "origin": "马达加斯加",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p069",
+      "name": "蟹爪兰",
+      "scientificName": "Schlumbergera truncata",
+      "category": "flowering",
+      "family": "仙人掌科",
+      "origin": "巴西",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=400"
+    },
+    {
+      "id": "p070",
+      "name": "天竺葵",
+      "scientificName": "Pelargonium hortorum",
+      "category": "flowering",
+      "family": "牻牛儿苗科",
+      "origin": "南非",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p071",
+      "name": "茉莉花",
+      "scientificName": "Jasminum sambac",
+      "category": "flowering",
+      "family": "木犀科",
+      "origin": "印度",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p072",
+      "name": "栀子花",
+      "scientificName": "Gardenia jasminoides",
+      "category": "flowering",
+      "family": "茜草科",
+      "origin": "中国",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p073",
+      "name": "桂花",
+      "scientificName": "Osmanthus fragrans",
+      "category": "flowering",
+      "family": "木犀科",
+      "origin": "中国",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p074",
+      "name": "茶花",
+      "scientificName": "Camellia japonica",
+      "category": "flowering",
+      "family": "山茶科",
+      "origin": "东亚",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p075",
+      "name": "杜鹃花",
+      "scientificName": "Rhododendron simsii",
+      "category": "flowering",
+      "family": "杜鹃花科",
+      "origin": "中国",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p076",
+      "name": "牡丹",
+      "scientificName": "Paeonia suffruticosa",
+      "category": "flowering",
+      "family": "芍药科",
+      "origin": "中国",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p077",
+      "name": "芍药",
+      "scientificName": "Paeonia lactiflora",
+      "category": "flowering",
+      "family": "芍药科",
+      "origin": "中国",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p078",
+      "name": "海棠",
+      "scientificName": "Malus spectabilis",
+      "category": "flowering",
+      "family": "蔷薇科",
+      "origin": "中国",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p079",
+      "name": "月季",
+      "scientificName": "Rosa chinensis",
+      "category": "flowering",
+      "family": "蔷薇科",
+      "origin": "中国",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?w=400"
+    },
+    {
+      "id": "p080",
+      "name": "玫瑰",
+      "scientificName": "Rosa rugosa",
+      "category": "flowering",
+      "family": "蔷薇科",
+      "origin": "中国",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?w=400"
+    },
+    {
+      "id": "p081",
+      "name": "百合",
+      "scientificName": "Lilium brownii",
+      "category": "flowering",
+      "family": "百合科",
+      "origin": "中国",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p082",
+      "name": "郁金香",
+      "scientificName": "Tulipa gesneriana",
+      "category": "flowering",
+      "family": "百合科",
+      "origin": "中亚",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1520763185298-1b434c919102?w=400"
+    },
+    {
+      "id": "p083",
+      "name": "风信子",
+      "scientificName": "Hyacinthus orientalis",
+      "category": "flowering",
+      "family": "天门冬科",
+      "origin": "地中海",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p084",
+      "name": "水仙",
+      "scientificName": "Narcissus tazetta",
+      "category": "flowering",
+      "family": "石蒜科",
+      "origin": "地中海",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p085",
+      "name": "朱顶红",
+      "scientificName": "Hippeastrum rutilum",
+      "category": "flowering",
+      "family": "石蒜科",
+      "origin": "南美",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p086",
+      "name": "大岩桐",
+      "scientificName": "Sinningia speciosa",
+      "category": "flowering",
+      "family": "苦苣苔科",
+      "origin": "巴西",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p087",
+      "name": "非洲紫罗兰",
+      "scientificName": "Saintpaulia ionantha",
+      "category": "flowering",
+      "family": "苦苣苔科",
+      "origin": "东非",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p088",
+      "name": "三色堇",
+      "scientificName": "Viola tricolor",
+      "category": "flowering",
+      "family": "堇菜科",
+      "origin": "欧洲",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p089",
+      "name": "报春花",
+      "scientificName": "Primula malacoides",
+      "category": "flowering",
+      "family": "报春花科",
+      "origin": "中国",
+      "difficulty": 2,
+      "light": 4,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "观花"
+      ],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p090",
+      "name": "薄荷",
+      "scientificName": "Mentha haplocalyx",
+      "category": "herb",
+      "family": "唇形科",
+      "origin": "欧洲",
+      "difficulty": 3,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p091",
+      "name": "迷迭香",
+      "scientificName": "Rosmarinus officinalis",
+      "category": "herb",
+      "family": "唇形科",
+      "origin": "地中海",
+      "difficulty": 3,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p092",
+      "name": "百里香",
+      "scientificName": "Thymus vulgaris",
+      "category": "herb",
+      "family": "唇形科",
+      "origin": "地中海",
+      "difficulty": 3,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p093",
+      "name": "薰衣草",
+      "scientificName": "Lavandula angustifolia",
+      "category": "herb",
+      "family": "唇形科",
+      "origin": "地中海",
+      "difficulty": 3,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p094",
+      "name": "罗勒",
+      "scientificName": "Ocimum basilicum",
+      "category": "herb",
+      "family": "唇形科",
+      "origin": "印度",
+      "difficulty": 3,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p095",
+      "name": "紫苏",
+      "scientificName": "Perilla frutescens",
+      "category": "herb",
+      "family": "唇形科",
+      "origin": "中国",
+      "difficulty": 3,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p096",
+      "name": "碰碰香",
+      "scientificName": "Plectranthus tomentosa",
+      "category": "herb",
+      "family": "唇形科",
+      "origin": "南非",
+      "difficulty": 3,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p097",
+      "name": "柠檬香蜂草",
+      "scientificName": "Melissa officinalis",
+      "category": "herb",
+      "family": "唇形科",
+      "origin": "地中海",
+      "difficulty": 3,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p098",
+      "name": "猫薄荷",
+      "scientificName": "Nepeta cataria",
+      "category": "herb",
+      "family": "唇形科",
+      "origin": "欧洲",
+      "difficulty": 3,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p099",
+      "name": "吸毒草",
+      "scientificName": "Plectranthus hadiensis",
+      "category": "herb",
+      "family": "唇形科",
+      "origin": "南非",
+      "difficulty": 3,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p100",
+      "name": "铁线蕨",
+      "scientificName": "Adiantum capillus-veneris",
+      "category": "fern",
+      "family": "铁线蕨科",
+      "origin": "全球温带",
+      "difficulty": 3,
+      "light": 1,
+      "water": "high",
+      "temperature": "15-25°C",
+      "humidity": "60-80%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "孢子繁殖、分株",
+      "description": "",
+      "careTips": [
+        "保持土壤湿润，多喷水增湿",
+        "避免强光直射，适合室内养护",
+        "保持高湿度环境"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴"
+      ],
+      "image": "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=400"
+    },
+    {
+      "id": "p101",
+      "name": "波士顿蕨",
+      "scientificName": "Nephrolepis exaltata",
+      "category": "fern",
+      "family": "肾蕨科",
+      "origin": "热带美洲",
+      "difficulty": 3,
+      "light": 1,
+      "water": "high",
+      "temperature": "15-25°C",
+      "humidity": "60-80%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "孢子繁殖、分株",
+      "description": "",
+      "careTips": [
+        "保持土壤湿润，多喷水增湿",
+        "避免强光直射，适合室内养护",
+        "保持高湿度环境"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴"
+      ],
+      "image": "https://images.unsplash.com/photo-1599598425947-520afb0fd5b7?w=400"
+    },
+    {
+      "id": "p102",
+      "name": "肾蕨",
+      "scientificName": "Nephrolepis cordifolia",
+      "category": "fern",
+      "family": "肾蕨科",
+      "origin": "热带亚洲",
+      "difficulty": 3,
+      "light": 1,
+      "water": "high",
+      "temperature": "15-25°C",
+      "humidity": "60-80%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "孢子繁殖、分株",
+      "description": "",
+      "careTips": [
+        "保持土壤湿润，多喷水增湿",
+        "避免强光直射，适合室内养护",
+        "保持高湿度环境"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴"
+      ],
+      "image": "https://images.unsplash.com/photo-1599598425947-520afb0fd5b7?w=400"
+    },
+    {
+      "id": "p103",
+      "name": "鸟巢蕨",
+      "scientificName": "Asplenium nidus",
+      "category": "fern",
+      "family": "铁角蕨科",
+      "origin": "热带亚洲",
+      "difficulty": 3,
+      "light": 1,
+      "water": "high",
+      "temperature": "15-25°C",
+      "humidity": "60-80%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "孢子繁殖、分株",
+      "description": "",
+      "careTips": [
+        "保持土壤湿润，多喷水增湿",
+        "避免强光直射，适合室内养护",
+        "保持高湿度环境"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p104",
+      "name": "鹿角蕨",
+      "scientificName": "Platycerium bifurcatum",
+      "category": "fern",
+      "family": "水龙骨科",
+      "origin": "澳洲",
+      "difficulty": 3,
+      "light": 1,
+      "water": "high",
+      "temperature": "15-25°C",
+      "humidity": "60-80%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "孢子繁殖、分株",
+      "description": "",
+      "careTips": [
+        "保持土壤湿润，多喷水增湿",
+        "避免强光直射，适合室内养护",
+        "保持高湿度环境"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴"
+      ],
+      "image": "https://images.unsplash.com/photo-1598880940371-c756e015fea1?w=400"
+    },
+    {
+      "id": "p105",
+      "name": "卷柏",
+      "scientificName": "Selaginella tamariscina",
+      "category": "fern",
+      "family": "卷柏科",
+      "origin": "中国",
+      "difficulty": 3,
+      "light": 1,
+      "water": "high",
+      "temperature": "15-25°C",
+      "humidity": "60-80%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "孢子繁殖、分株",
+      "description": "",
+      "careTips": [
+        "保持土壤湿润，多喷水增湿",
+        "避免强光直射，适合室内养护",
+        "保持高湿度环境"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p106",
+      "name": "翠云草",
+      "scientificName": "Selaginella uncinata",
+      "category": "fern",
+      "family": "卷柏科",
+      "origin": "中国",
+      "difficulty": 3,
+      "light": 1,
+      "water": "high",
+      "temperature": "15-25°C",
+      "humidity": "60-80%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "孢子繁殖、分株",
+      "description": "",
+      "careTips": [
+        "保持土壤湿润，多喷水增湿",
+        "避免强光直射，适合室内养护",
+        "保持高湿度环境"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "徒长：光照不足",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐阴"
+      ],
+      "image": "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=400"
+    },
+    {
+      "id": "p107",
+      "name": "仙人球",
+      "scientificName": "Echinopsis tubiflora",
+      "category": "cactus",
+      "family": "仙人掌科",
+      "origin": "南美",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p108",
+      "name": "仙人掌",
+      "scientificName": "Opuntia stricta",
+      "category": "cactus",
+      "family": "仙人掌科",
+      "origin": "墨西哥",
+      "difficulty": 1,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "新手友好",
+        "耐旱"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p109",
+      "name": "仙人柱",
+      "scientificName": "Cereus peruvianus",
+      "category": "cactus",
+      "family": "仙人掌科",
+      "origin": "南美",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p110",
+      "name": "金琥",
+      "scientificName": "Echinocactus grusonii",
+      "category": "cactus",
+      "family": "仙人掌科",
+      "origin": "墨西哥",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p111",
+      "name": "绯花玉",
+      "scientificName": "Gymnocalycium baldianum",
+      "category": "cactus",
+      "family": "仙人掌科",
+      "origin": "阿根廷",
+      "difficulty": 2,
+      "light": 4,
+      "water": "rare",
+      "temperature": "10-35°C",
+      "humidity": "30-50%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "慢",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "叶插、分株",
+      "description": "",
+      "careTips": [
+        "宁干勿湿，避免积水",
+        "需要充足光照，可放阳台"
+      ],
+      "commonIssues": [
+        "烂根：浇水过多",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "耐旱"
+      ],
+      "image": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400"
+    },
+    {
+      "id": "p112",
+      "name": "常春藤",
+      "scientificName": "Hedera helix",
+      "category": "climbing",
+      "family": "五加科",
+      "origin": "欧洲",
+      "difficulty": 2,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1598880940371-c756e015fea1?w=400"
+    },
+    {
+      "id": "p113",
+      "name": "球兰",
+      "scientificName": "Hoya carnosa",
+      "category": "climbing",
+      "family": "夹竹桃科",
+      "origin": "亚洲",
+      "difficulty": 2,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1598880940371-c756e015fea1?w=400"
+    },
+    {
+      "id": "p114",
+      "name": "心叶球兰",
+      "scientificName": "Hoya kerrii",
+      "category": "climbing",
+      "family": "夹竹桃科",
+      "origin": "泰国",
+      "difficulty": 2,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1598880940371-c756e015fea1?w=400"
+    },
+    {
+      "id": "p115",
+      "name": "绿萝",
+      "scientificName": "Epipremnum aureum",
+      "category": "climbing",
+      "family": "天南星科",
+      "origin": "所罗门群岛",
+      "difficulty": 1,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "对宠物有毒",
+      "propagation": "扦插",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "新手友好"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p116",
+      "name": "合果芋",
+      "scientificName": "Syngonium podophyllum",
+      "category": "climbing",
+      "family": "天南星科",
+      "origin": "热带美洲",
+      "difficulty": 2,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p117",
+      "name": "牵牛花",
+      "scientificName": "Ipomoea nil",
+      "category": "climbing",
+      "family": "旋花科",
+      "origin": "热带美洲",
+      "difficulty": 2,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1598880940371-c756e015fea1?w=400"
+    },
+    {
+      "id": "p118",
+      "name": "茑萝",
+      "scientificName": "Ipomoea quamoclit",
+      "category": "climbing",
+      "family": "旋花科",
+      "origin": "热带美洲",
+      "difficulty": 2,
+      "light": 3,
+      "water": "medium",
+      "temperature": "18-28°C",
+      "humidity": "40-70%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "快",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插",
+      "description": "",
+      "careTips": [
+        "见干见湿，保持土壤微湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1598880940371-c756e015fea1?w=400"
+    },
+    {
+      "id": "p119",
+      "name": "铜钱草",
+      "scientificName": "Hydrocotyle vulgaris",
+      "category": "aquatic",
+      "family": "伞形科",
+      "origin": "欧洲",
+      "difficulty": 1,
+      "light": 3,
+      "water": "high",
+      "temperature": "18-28°C",
+      "humidity": "60-80%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "对宠物安全",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "保持土壤湿润，多喷水增湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "新手友好"
+      ],
+      "image": "https://images.unsplash.com/photo-1599598425947-520afb0fd5b7?w=400"
+    },
+    {
+      "id": "p120",
+      "name": "水仙",
+      "scientificName": "Narcissus tazetta",
+      "category": "aquatic",
+      "family": "石蒜科",
+      "origin": "地中海",
+      "difficulty": 2,
+      "light": 3,
+      "water": "high",
+      "temperature": "18-28°C",
+      "humidity": "60-80%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "保持土壤湿润，多喷水增湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1599598425947-520afb0fd5b7?w=400"
+    },
+    {
+      "id": "p121",
+      "name": "风信子",
+      "scientificName": "Hyacinthus orientalis",
+      "category": "aquatic",
+      "family": "天门冬科",
+      "origin": "地中海",
+      "difficulty": 2,
+      "light": 3,
+      "water": "high",
+      "temperature": "18-28°C",
+      "humidity": "60-80%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "保持土壤湿润，多喷水增湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400"
+    },
+    {
+      "id": "p122",
+      "name": "富贵竹",
+      "scientificName": "Dracaena sanderiana",
+      "category": "aquatic",
+      "family": "天门冬科",
+      "origin": "西非",
+      "difficulty": 1,
+      "light": 3,
+      "water": "high",
+      "temperature": "18-28°C",
+      "humidity": "60-80%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "对宠物安全",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "保持土壤湿润，多喷水增湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "新手友好"
+      ],
+      "image": "https://images.unsplash.com/photo-1599598425947-520afb0fd5b7?w=400"
+    },
+    {
+      "id": "p123",
+      "name": "绿萝",
+      "scientificName": "Epipremnum aureum",
+      "category": "aquatic",
+      "family": "天南星科",
+      "origin": "所罗门群岛",
+      "difficulty": 1,
+      "light": 3,
+      "water": "high",
+      "temperature": "18-28°C",
+      "humidity": "60-80%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "对宠物有毒",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "保持土壤湿润，多喷水增湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "新手友好"
+      ],
+      "image": "https://images.unsplash.com/photo-1596724857861-9b5b97c5ec0c?w=400"
+    },
+    {
+      "id": "p124",
+      "name": "吊兰",
+      "scientificName": "Chlorophytum comosum",
+      "category": "aquatic",
+      "family": "天门冬科",
+      "origin": "南非",
+      "difficulty": 1,
+      "light": 3,
+      "water": "high",
+      "temperature": "18-28°C",
+      "humidity": "60-80%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "对宠物安全",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "保持土壤湿润，多喷水增湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [
+        "新手友好"
+      ],
+      "image": "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=400"
+    },
+    {
+      "id": "p125",
+      "name": "睡莲",
+      "scientificName": "Nymphaea tetragona",
+      "category": "aquatic",
+      "family": "睡莲科",
+      "origin": "全球温带",
+      "difficulty": 2,
+      "light": 3,
+      "water": "high",
+      "temperature": "18-28°C",
+      "humidity": "60-80%",
+      "soil": "疏松透气",
+      "fertilizer": "生长期每月一次",
+      "growthRate": "中等",
+      "matureSize": "",
+      "toxicity": "未知",
+      "propagation": "扦插、分株",
+      "description": "",
+      "careTips": [
+        "保持土壤湿润，多喷水增湿",
+        "明亮散射光最佳"
+      ],
+      "commonIssues": [
+        "黄叶：浇水不当",
+        "叶尖干枯：空气太干燥",
+        "病虫害：注意通风"
+      ],
+      "tags": [],
+      "image": "https://images.unsplash.com/photo-1599598425947-520afb0fd5b7?w=400"
+    }
+  ]
+}

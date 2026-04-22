@@ -1,0 +1,13 @@
+✅ 植物数据库加载成功，共 825 种植物
+
+🌹 Rose Garden 植物数据库 API (数据库版本)
+========================================
+✅ 服务器运行在 http://localhost:3003
+📊 使用 SQLite 数据库: ./database/garden.db
+🔐 认证: /api/auth/*
+🌱 花园: /api/gardens
+🌿 植物: /api/user-plants
+📚 植物类型: /api/plant-types
+========================================
+
+🐍 启动 Python 数据库进程...

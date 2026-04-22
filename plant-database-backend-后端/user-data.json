@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "id": "u001",
+      "username": "gardener",
+      "email": "gardener@example.com",
+      "passwordHash": "$2b$10$...",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200",
+      "createdAt": "2026-04-03T10:00:00Z",
+      "updatedAt": "2026-04-03T10:00:00Z"
+    },
+    {
+      "id": "umniq9vx8zs7wl",
+      "username": "野山椒",
+      "email": "test@example.com",
+      "passwordHash": "$2b$10$8Lyzk8qnLAT5/Try0k2gmuLWIddyMx5s3uk/1FQwHq4ocMErM8jgO",
+      "avatar": "",
+      "createdAt": "2026-04-03T09:55:26.300Z",
+      "updatedAt": "2026-04-17T08:48:14.304Z",
+      "bio": "我是一棵小小草"
+    },
+    {
+      "id": "umniqa2r6kxr1d",
+      "username": "roseuser",
+      "email": "rose@example.com",
+      "passwordHash": "$2b$10$cbs68zDpJYstgY5g3XYCI.0d1MF4gu4/6OnjcdknEjA/mInKY0Uoa",
+      "avatar": null,
+      "createdAt": "2026-04-03T09:55:35.154Z",
+      "updatedAt": "2026-04-03T09:55:35.154Z"
+    }
+  ],
+  "userPlants": [
+    {
+      "id": "up001",
+      "userId": "u001",
+      "plantId": "p001",
+      "nickname": "我的小绿萝",
+      "acquiredDate": "2026-03-15",
+      "location": "客厅窗台",
+      "notes": "长得很好",
+      "lastWatered": "2026-04-02",
+      "waterFrequency": 7,
+      "lastFertilized": "2026-03-20",
+      "fertilizeFrequency": 30,
+      "createdAt": "2026-04-03T10:00:00Z",
+      "updatedAt": "2026-04-03T10:00:00Z"
+    },
+    {
+      "id": "upmniqrecx526fx",
+      "userId": "umniqa2r6kxr1d",
+      "plantId": "p001",
+      "nickname": "我的小绿萝",
+      "acquiredDate": "2026-04-03",
+      "location": "客厅窗台",
+      "notes": null,
+      "lastWatered": null,
+      "waterFrequency": 7,
+      "lastFertilized": null,
+      "fertilizeFrequency": 30,
+      "createdAt": "2026-04-03T10:09:03.413Z",
+      "updatedAt": "2026-04-03T10:09:03.413Z"
+    },
+    {
+      "id": "upmnxz0hd1fftan",
+      "userId": "umniq9vx8zs7wl",
+      "plantId": "p001",
+      "nickname": "野山椒",
+      "acquiredDate": "2026-04-14",
+      "location": null,
+      "notes": null,
+      "lastWatered": null,
+      "waterFrequency": 7,
+      "lastFertilized": null,
+      "fertilizeFrequency": 30,
+      "createdAt": "2026-04-14T01:56:36.710Z",
+      "updatedAt": "2026-04-15T06:39:01.779Z"
+    },
+    {
+      "id": "upmo2kkdkpugwce",
+      "userId": "umniq9vx8zs7wl",
+      "plantId": "p004",
+      "nickname": "鸡北北",
+      "acquiredDate": "2026-04-17",
+      "location": null,
+      "notes": null,
+      "lastWatered": null,
+      "waterFrequency": 7,
+      "lastFertilized": null,
+      "fertilizeFrequency": 30,
+      "createdAt": "2026-04-17T07:11:01.561Z",
+      "updatedAt": "2026-04-17T07:20:10.093Z"
+    }
+  ],
+  "reminders": [
+    {
+      "id": "r001",
+      "userId": "u001",
+      "userPlantId": "up001",
+      "type": "water",
+      "title": "给绿萝浇水",
+      "dueDate": "2026-04-04",
+      "completed": false,
+      "createdAt": "2026-04-03T10:00:00Z"
+    },
+    {
+      "id": "rmniqrjsq6b17o",
+      "userId": "umniqa2r6kxr1d",
+      "userPlantId": "upmniqrecx526fx",
+      "type": "water",
+      "title": "给绿萝浇水",
+      "dueDate": "2026-04-05",
+      "completed": false,
+      "recurring": true,
+      "interval": 7,
+      "createdAt": "2026-04-03T10:09:10.394Z",
+      "updatedAt": "2026-04-03T10:09:10.394Z"
+    }
+  ],
+  "version": "1.0.0"
+}

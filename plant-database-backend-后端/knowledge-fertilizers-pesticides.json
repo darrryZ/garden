@@ -1,0 +1,313 @@
+{
+  "version": "1.0",
+  "description": "植愈App肥料与药剂知识库",
+  "fertilizers": {
+    "types": [
+      {
+        "id": "slow_release",
+        "name": "缓释肥",
+        "description": "一次施用，3-6个月有效",
+        "features": ["省时省力", "肥效持久", "不易烧根"],
+        "recommended_brands": ["奥绿318S", "美乐棵缓释肥"],
+        "usage": "撒在土表或混入土中，每3-6个月施用一次",
+        "suitable_for": ["all"]
+      },
+      {
+        "id": "water_soluble",
+        "name": "水溶肥",
+        "description": "见效快，可控制浓度",
+        "features": ["吸收快", "浓度可调", "适合追肥"],
+        "recommended_products": [
+          {
+            "name": "花多多1号",
+            "npk": "20-20-20",
+            "use_for": "生长期通用"
+          },
+          {
+            "name": "花多多2号",
+            "npk": "10-30-20",
+            "use_for": "促花促果"
+          },
+          {
+            "name": "花多多10号",
+            "npk": "30-10-10",
+            "use_for": "观叶植物"
+          },
+          {
+            "name": "磷酸二氢钾",
+            "npk": "0-52-34",
+            "use_for": "促花、壮果、增强抗性"
+          }
+        ],
+        "usage": "稀释1000倍后浇灌或喷施，生长期2周1次",
+        "suitable_for": ["all"]
+      },
+      {
+        "id": "organic",
+        "name": "有机肥",
+        "description": "温和持久，改良土壤",
+        "features": ["改善土壤结构", "营养全面", "环保"],
+        "types": [
+          {
+            "name": "蚯蚓粪",
+            "use_for": "基肥、追肥",
+            "feature": "可直接使用，不烧根"
+          },
+          {
+            "name": "骨粉",
+            "use_for": "开花植物、果树",
+            "feature": "高磷，促花促果"
+          },
+          {
+            "name": "腐熟羊粪",
+            "use_for": "基肥",
+            "feature": "营养全面，改良土壤"
+          }
+        ],
+        "usage": "换盆时做基肥，混入土壤中",
+        "suitable_for": ["all"]
+      }
+    ],
+    "schedules": {
+      "succulent": {
+        "spring": {
+          "fertilizer": "多肉专用肥(10-20-30)或花多多1号",
+          "frequency": "1月1次",
+          "dilution": "1:2000（浓度减半）",
+          "note": "开始恢复生长，少量施肥"
+        },
+        "summer": {
+          "fertilizer": "停止施肥",
+          "frequency": "不施肥",
+          "note": "休眠期，控水控肥"
+        },
+        "autumn": {
+          "fertilizer": "多肉专用肥",
+          "frequency": "1月1次",
+          "dilution": "1:2000",
+          "note": "生长旺盛期"
+        },
+        "winter": {
+          "fertilizer": "停止施肥",
+          "frequency": "不施肥",
+          "note": "休眠期，保持干燥"
+        }
+      },
+      "foliage": {
+        "spring": {
+          "fertilizer": "花多多1号(20-20-20)",
+          "frequency": "2周1次",
+          "dilution": "1:1000"
+        },
+        "summer": {
+          "fertilizer": "花多多10号(30-10-10)",
+          "frequency": "2周1次",
+          "dilution": "1:1500",
+          "note": "高温时稀释浓度"
+        },
+        "autumn": {
+          "fertilizer": "花多多1号",
+          "frequency": "1月1次",
+          "dilution": "1:1000"
+        },
+        "winter": {
+          "fertilizer": "停止施肥",
+          "frequency": "不施肥"
+        }
+      },
+      "flowering": {
+        "vegetative": {
+          "fertilizer": "花多多1号(20-20-20)",
+          "purpose": "健壮植株",
+          "frequency": "2周1次"
+        },
+        "budding": {
+          "fertilizer": "花多多2号(10-30-20)或磷酸二氢钾",
+          "purpose": "促进开花",
+          "frequency": "1周1次",
+          "duration": "开花前2周开始"
+        },
+        "blooming": {
+          "fertilizer": "停止施肥",
+          "note": "花期不施肥，保持水分"
+        },
+        "after_bloom": {
+          "fertilizer": "花多多1号",
+          "purpose": "恢复体力",
+          "frequency": "2周1次"
+        }
+      }
+    }
+  },
+  "pesticides": {
+    "insecticides": [
+      {
+        "id": "imidacloprid",
+        "name": "吡虫啉",
+        "targets": ["蚜虫", "粉虱", "蓟马"],
+        "type": "内吸型",
+        "dilution": "3000倍",
+        "features": ["持效长", "低毒"],
+        "safety_interval": "7-10天"
+      },
+      {
+        "id": "abamectin",
+        "name": "阿维菌素",
+        "targets": ["红蜘蛛", "蚜虫", "线虫"],
+        "type": "广谱",
+        "dilution": "1500倍",
+        "features": ["低毒", "生物源"],
+        "safety_interval": "7天"
+      },
+      {
+        "id": "buprofezin",
+        "name": "噻嗪酮",
+        "targets": ["介壳虫", "粉虱"],
+        "type": "抑制蜕皮",
+        "dilution": "2000倍",
+        "features": ["持效长", "对成虫效果差"],
+        "safety_interval": "14天"
+      },
+      {
+        "id": "matrine",
+        "name": "苦参碱",
+        "targets": ["蚜虫", "多种害虫"],
+        "type": "植物源",
+        "dilution": "500倍",
+        "features": ["低毒", "有机可用"],
+        "safety_interval": "3天"
+      }
+    ],
+    "fungicides": [
+      {
+        "id": "carbendazim",
+        "name": "多菌灵",
+        "targets": ["多种真菌病害"],
+        "type": "广谱内吸",
+        "dilution": "800-1000倍",
+        "features": ["广谱", "可灌根"],
+        "note": "不要连续使用，易耐药"
+      },
+      {
+        "id": "chlorothalonil",
+        "name": "百菌清",
+        "targets": ["多种真菌病害"],
+        "type": "保护性",
+        "dilution": "600倍",
+        "features": ["广谱", "保护性"]
+      },
+      {
+        "id": "mancozeb",
+        "name": "代森锰锌",
+        "targets": ["霜霉病", "疫病"],
+        "type": "保护性",
+        "dilution": "500-600倍",
+        "features": ["便宜", "广谱"],
+        "note": "现配现用"
+      },
+      {
+        "id": "pyrimethanil",
+        "name": "嘧霉胺",
+        "targets": ["灰霉病"],
+        "type": "内吸治疗",
+        "dilution": "1000倍",
+        "features": ["低温效果好"]
+      },
+      {
+        "id": "prochloraz",
+        "name": "咪鲜胺",
+        "targets": ["炭疽病"],
+        "type": "治疗保护双重",
+        "dilution": "1500倍"
+      },
+      {
+        "id": "hymexazol",
+        "name": "恶霉灵",
+        "targets": ["根腐病", "立枯病"],
+        "type": "土壤消毒",
+        "dilution": "3000倍",
+        "usage": "灌根使用"
+      }
+    ],
+    "miticides": [
+      {
+        "id": "pyridaben",
+        "name": "哒螨灵",
+        "targets": ["红蜘蛛"],
+        "type": "速效型",
+        "dilution": "2000倍",
+        "features": ["对成螨效果好"]
+      },
+      {
+        "id": "etoxazole",
+        "name": "乙螨唑",
+        "targets": ["红蜘蛛卵和幼螨"],
+        "type": "杀卵剂",
+        "dilution": "3000倍",
+        "note": "与杀成螨剂混用效果更佳"
+      }
+    ],
+    "treatment_plans": {
+      "aphids": {
+        "name": "蚜虫防治",
+        "physical": ["手动捏死", "湿布擦拭", "黄色粘虫板"],
+        "biological": ["苦参碱500倍", "肥皂水(1g:1L)"],
+        "chemical": ["吡虫啉3000倍"],
+        "frequency": "5-7天1次，连续2-3次"
+      },
+      "spider_mites": {
+        "name": "红蜘蛛防治",
+        "physical": ["强力水流冲洗", "增加湿度"],
+        "chemical": ["阿维菌素1500倍", "哒螨灵2000倍"],
+        "note": "重点喷叶片背面"
+      },
+      "scale_insects": {
+        "name": "介壳虫防治",
+        "physical": ["酒精棉签擦拭", "牙刷刷除"],
+        "chemical": ["噻嗪酮2000倍"]
+      },
+      "powdery_mildew": {
+        "name": "白粉病防治",
+        "organic": ["小苏打水(5g:1L)", "牛奶水(1:9)"],
+        "chemical": ["硫磺悬浮剂500倍", "三唑酮1500倍"],
+        "frequency": "5-7天1次，连续3次"
+      },
+      "anthracnose": {
+        "name": "炭疽病防治",
+        "steps": ["摘除病叶", "改善通风"],
+        "chemical": ["咪鲜胺1500倍", "苯醚甲环唑2000倍"],
+        "frequency": "7天1次，连续2-3次"
+      },
+      "gray_mold": {
+        "name": "灰霉病防治",
+        "steps": ["清除病组织", "降低湿度"],
+        "chemical": ["嘧霉胺1000倍", "腐霉利1500倍"],
+        "frequency": "5天1次，连续3次"
+      },
+      "root_rot": {
+        "name": "根腐病防治",
+        "steps": ["脱盆修根", "消毒", "换新土"],
+        "chemical": ["恶霉灵3000倍灌根", "多菌灵500倍灌根"]
+      }
+    }
+  },
+  "safety": {
+    "mixing_rules": [
+      "先加水，后加药",
+      "二次稀释：先用少量水化开，再加水至刻度",
+      "现配现用，不要隔夜",
+      "酸性药配酸性药，碱性药配碱性药"
+    ],
+    "protection": [
+      "戴手套",
+      "戴口罩",
+      "穿长袖",
+      "顺风施药"
+    ],
+    "first_aid": {
+      "skin_contact": "立即脱去污染衣物，清水冲洗15分钟",
+      "eye_contact": "用生理盐水或清水冲洗，立即就医",
+      "ingestion": "立即就医，携带农药标签"
+    }
+  }
+}
